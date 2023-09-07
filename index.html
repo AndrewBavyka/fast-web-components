@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./src/components/input.js"></script>
+    <script type="module" src="./src/components/tabs/tab-group.js"></script>
+    <script type="module" src="./src/components/tabs/tab.js"></script>
+    <title>Vite + FAST</title>
+  </head>
+  <body class="wrapper">
+    <div class="block">
+      <h2>Поля ввода</h2>
+      <awc-input
+        name="input-awc-1"
+        color="red"
+        placeholder="Вставьте ссылку 1"
+        id="id-1"
+      ></awc-input>
+      <awc-input
+        name="input-awc-2"
+        placeholder="Вставьте ссылку 2"
+        id="id-2"
+      ></awc-input>
+    </div>
+    <div class="block">
+      <h2>Табы</h2>
+      <awc-tab id="tab-1" name="Название таба 1"></awc-tab>
+      <awc-tab id="tab-2" name="Название таба 2"></awc-tab>
+    </div>
+    <div class="block">
+      <h2>Группы табов</h2>
+      <awc-tab-group position="row">
+        <awc-tab id="tab-3" name="Общие"></awc-tab>
+        <awc-tab id="tab-4" name="Транзакции"></awc-tab>
+        <awc-tab id="tab-5" name="История"></awc-tab>
+      </awc-tab-group>
+    </div>
+  </body>
+</html>
